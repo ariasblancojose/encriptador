@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.ccs">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+    <title>Encriptador</title>
+  
+</head>
+<body>
+
+    <header>
+        <img class="logo" src="Imagenes/Logo_a.png" alt="Logo Alura" >
+    </header>
+    <main>
+        <section>
+            <div class="contenedor">
+                <textarea name="text_area" class="text_area" cols="40" rows="15" placeholder="Ingrese el texto aqui" ></textarea>
+            </div>
+            
+            
+            <div>
+                <img class="alerta" src="Imagenes/alerta.png" alt="logo alerta" >
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <button class="btn_encriptador" type="button" onclick="encriptar()">Encriptar</button>
+                <button class="btn_desencriptador" type="button" onclick="encriptar()">Desencriptar</button>
+            </div>
+            
+        </section>
+
+        <section>
+            <div class="contenedor_texto_desencriptado">
+                <img src="Imagenes/Munheco.png" alt="munheco_desecriptador" id="munheco">
+                <div id="solucion-encriptado">
+                        <h2 id="titulo_solucion">Ningun mensaje encontrado</h2>
+                        <p id="parrafo-solucion">Ingresa el texto que desees encriptar o desencriptar.</p>
+                        <textarea name="mensaje" class="text_area" cols="30" rows="10" ></textarea>
+                </div>
+            
+            <button class="btn_copiar">Copiar</button>
+
+            </div>
+        
+            
+     
+            
+        </section>
+    
+    </main>
+   </body>
+   <script> src="index.js"</script>
+
+</html>
