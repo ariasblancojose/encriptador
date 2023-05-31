@@ -1,14 +1,155 @@
-*{
-background: #f3f5fc;
-font-family: 'Inter';
+* {
+    margin 0
+    padding: 0;
+    background: #F3F5FC;
+    font-family: 'Inter';
 
-font-weight: 400;
-font-size: 32px;
-line-height: 150%;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 120%;
+
 }
+
 .logo{
-padding-top: 10px;
-margin-left: 10px;
-width: 10%;
+    padding-top: 20px;
+    margin-left: 50px;
+    width: 15%;
+
 
 }
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 88px;
+}
+
+.text_area {
+    position: absolute;
+    width: 40%;
+    height: 60%;
+    left: 15%;
+    top: 10%;
+    border: none;
+    color: #0A3871;
+    margin-top: 90px;
+   
+    font-family: "Inter";
+    font-size: 32px;
+    font-weight: 400;
+
+}
+.alerta{
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+position: absolute;
+width: 80%;
+left: 15%;
+top: 82%;
+height: 18px;
+
+color: #495057;
+opacity: 0.8;
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 150%;
+
+}
+
+.text_area::placeholder { color: #0A3871 ;
+outline: none;
+
+}
+
+.mensaje {
+    display: flex;
+    width: 30%;
+    height: 70%;
+    left: 70%;
+    top: 10%;
+    background: white;
+    background-image: url("/imagenes/Munheco.png");
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: absolute;
+}
+.mensaje:focus {
+    online:none;
+    
+
+}
+.botones{
+display: flex;
+flex-direction: row;
+margin-top: 18px;
+align-items: flex-start;
+gap: 24px;
+padding: 1% 0;
+position: absolute;
+width: 82%;
+left: 15%;
+top: 84%;
+}
+.btn_encriptador{
+background: #0A3871;
+border-radius: 24px;
+display: flex;
+flex-direction: column-reverse;
+align-items: center;
+justify-content: center;
+padding: 24px;
+gap: 8px;
+color:white;
+cursor: pointer;
+width: 328px;
+height: 67px;
+margin-left: 30px;
+}
+
+.btn_desencriptador{ 
+background:#D8DFE8 ;
+border: 1px solid #0A3871;
+border-radius: 24px;
+display: flex;
+color: #0A3871;
+flex-direction: column-reverse;
+align-items: center;
+justify-content: center;
+padding: 24px;
+gap: 8px;
+cursor: pointer;
+width: 328px;
+height: 67px;
+margin-left: 30px;
+
+}
+.btn_encriptador:hover,
+.btn_desencriptador:hover{
+margin: 0.3%;
+width: 50%;
+padding: 1.8%;
+}
+.btn_copiar{
+border: 1px solid #0A3871;
+border-radius: 24px;
+color: #0A3871;
+cursor: pointer;
+
+margin-top: 312px;
+position: absolute;
+width: 336px;
+height: 67px;
+left: 1100px;
+top: 380px;
+
+
+}
+
