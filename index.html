@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
-
-
     <title>Encriptador</title>
-  
 </head>
-<body>
+    <body>
 
     <header>
         <img class="logo" src="Imagenes/Logo_a.png" alt="Logo Alura" >
@@ -21,7 +18,7 @@
     <main>
         <section>
             <div class="contenedor">
-                <textarea name="text_area" class="text_area" cols="40" rows="15" placeholder="Ingrese el texto aqui" ></textarea>
+                <textarea id="text_area" name="text_area" maxlength="300" minlength="1" autofocus class="text_area" cols="30" rows="15" requered placeholder="Ingrese el texto aqui" ></textarea>
             </div>
             
             
@@ -30,22 +27,23 @@
                 <p class="alerta">Solo letras minúsculas y sin acentos</p>
             </div>
             <div class="botones">
-                <button class="btn_encriptador" type="button" onclick="btcEncriptar()">Encriptar</button>
-                <button class="btn_desencriptador" type="button" onclick="encriptar()">Desencriptar</button>
+                <button class="btn_encriptador" type="button" onclick = "btn_Encriptador()">Encriptar</button>
+                <button class="btn_desencriptador" type="button" onclick = "btn_Desencriptar()">Desencriptar</button>
             </div>
             
         </section>
 
         <section>
-            <div class="contenedor_texto_desencriptado">
-               
-                <div class="solucion-encriptado">
+            <div id="mensaje" class="mensaje">
+                
+                <div class="solucion_encriptado">
+                    <textarea name="textoEncriptado" id="textoE" class="textoE" cols="25" rows="3" style="display: none;"></textarea>
                         <h2 id="titulo_solucion">Ningun mensaje encontrado</h2>
                         <p id="parrafo-solucion">Ingresa el texto que desees <br> encriptar o desencriptar.</p>
-                        <textarea class="mensaje" cols="20" rows="10" ></textarea>
+
                 </div>
             
-            <button class="btn_copiar">Copiar</button>
+            <button class="copiar" type="button" onclick= "copiar">Copiar</button>
 
             </div>
         
@@ -55,14 +53,14 @@
         </section>
     
     </main>
+    <footer>
+
+    </footer>
    </body>
 
-   <script> src="script.js"
+   <script src="script.js"></script> 
     
     
     
-    
-    
-    </script>
 
 </html>
