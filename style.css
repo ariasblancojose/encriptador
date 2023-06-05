@@ -1,7 +1,6 @@
 * {
-    margin 0
-    padding: 0;
-    background: #F3F5FC;
+
+
     font-family: 'Inter';
 
     font-weight: 300;
@@ -28,7 +27,7 @@ main{
     width: 40%;
     height: 60%;
     left: 15%;
-    top: 10%;
+    top: 5%;
     border: none;
     color: #0A3871;
     margin-top: 90px;
@@ -59,17 +58,18 @@ line-height: 150%;
 
 }
 
-.text_area::placeholder { color: #0A3871 ;
+.text_area::placeholder { 
+    color: #0A3871 ;
 outline: none;
 
 }
 
 .mensaje {
-    display: flex;
+    display: inline-flex;
     width: 30%;
-    height: 70%;
-    left: 70%;
-    top: 10%;
+
+    left: 65%;
+    top: 5%;
     background: white;
     background-image: url("/imagenes/Munheco.png");
     background-repeat: no-repeat;
@@ -78,14 +78,59 @@ outline: none;
     color: #0A3871;
     margin-left: 98px;
     margin-top: 20px;
-    padding-left: 20px;
+    padding-left: 25px;
+    padding-top: 25%;
     position: absolute;
+    text-align: center;
+ 
 }
 .mensaje:focus {
     online:none;
-    
+}
+.solucion-encriptado{
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+position: absolute;
+width: 336px;
+height: 122px;
+left: 1032px;
+top: 619px;
 
 }
+#titulo_solucion {
+    width: 336px;
+height: 58px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 120%;
+/* or 29px */
+
+text-align: center;
+
+/* Gray/gray-500 */
+
+color: #343A40;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+
+
+
 .botones{
 display: flex;
 flex-direction: row;
@@ -133,23 +178,39 @@ margin-left: 30px;
 }
 .btn_encriptador:hover,
 .btn_desencriptador:hover{
-margin: 0.3%;
-width: 50%;
-padding: 1.8%;
+margin: 0.1%;
+width: 45%;
+padding: 1.1%;
 }
-.btn_copiar{
+.copiar{
 border: 1px solid #0A3871;
 border-radius: 24px;
 color: #0A3871;
 cursor: pointer;
-
-margin-top: 312px;
 position: absolute;
 width: 336px;
 height: 67px;
-left: 1100px;
-top: 380px;
+top: 92%;
+margin: 0%;
+justify-content: center;
+justify-items: center;
+transition: background-color .5s;
 
+}
+.copiar:hover {
+    margin: 0.1%;
+    width: 50%;
+    padding: 1.1%;
+    position: absolute;
+    justify-items: center;
+    background-color:#0A3871;
+    color: #D8DFE8;
+    align-items: center;
+.textoE{
+top: 0%;
+border: none;
+
+}
 
 }
 
